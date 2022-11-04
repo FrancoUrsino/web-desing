@@ -1,0 +1,81 @@
+@import "variables";
+@import "global";
+@import "header";
+@import "navbar";
+@import "botones";
+@import "about";
+@import "AcercaDe";
+
+.precios__container{
+  text-align: center;
+
+  .precios__title{
+    color: $color3;
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+  }
+
+  .precios__tabla{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .precios__element{
+      background-color: rgba(241, 241, 241, 0.15);
+      text-align: center;
+      border-radius: 1em;
+      width: 310px;
+      padding: 20px 5px;
+    }
+
+    .precios__title--plan{
+      color: rgba(43, 49, 133, 0.719);
+      margin-bottom: 1em;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+
+    .precios__precio{
+      font-size: 2.2rem;
+      color: rgb(0, 0, 0);
+    }
+
+    .precios__items{
+      margin-top: 35px;
+      display: grid;
+      gap: 1em;
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      color: rgba(139, 139, 139, 0.719);
+      
+      .precios__info{
+        border-bottom: 1px solid rgba(220, 220, 220, 0.445);
+        padding-bottom: 3px;
+      }
+    }
+
+    .precios__btn{
+      display: block;
+      padding: 20px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: $color1;
+      font-weight: 600;
+      color: $color3;
+      box-shadow: 0 0 1px rgba( 0, 0, 0, .5);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
