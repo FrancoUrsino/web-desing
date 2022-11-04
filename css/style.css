@@ -392,21 +392,23 @@ html {
   align-items: center;
 }
 .precios__container .precios__tabla .precios__element {
-  background-color: rgba(241, 241, 241, 0.15);
+  background: rgba(224, 234, 253, 0.432);
   text-align: center;
   border-radius: 1em;
   width: 310px;
+  height: 75vh;
   padding: 20px 5px;
 }
 .precios__container .precios__tabla .precios__title--plan {
-  color: rgba(43, 49, 133, 0.719);
+  color: rgb(26, 26, 99);
   margin-bottom: 1em;
   font-weight: 400;
   font-size: 2rem;
 }
 .precios__container .precios__tabla .precios__precio {
   font-size: 2.2rem;
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
 }
 .precios__container .precios__tabla .precios__items {
   margin-top: 35px;
@@ -415,11 +417,16 @@ html {
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: 5px;
-  color: rgba(139, 139, 139, 0.719);
+  color: rgba(0, 0, 0, 0.616);
+  padding-left: 30px;
+  justify-items: left;
+  list-style: none;
+  border-top: 1px solid rgba(220, 220, 220, 0.801);
+  padding-top: 15px;
 }
 .precios__container .precios__tabla .precios__items .precios__info {
-  border-bottom: 1px solid rgba(220, 220, 220, 0.445);
-  padding-bottom: 3px;
+  padding-bottom: 15px;
+  justify-content: flex-start;
 }
 .precios__container .precios__tabla .precios__btn {
   display: block;
@@ -430,6 +437,7 @@ html {
   font-weight: 600;
   color: rgba(132, 161, 255, 0.8);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
