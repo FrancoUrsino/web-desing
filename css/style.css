@@ -419,13 +419,29 @@ html {
   border-radius: 1em;
   width: 310px;
   height: auto;
-  padding: 20px 5px;
+  padding: 20px 5px 10px;
+}
+.precios__container .precios__tabla .basic {
+  background: rgba(185, 209, 255, 0.432);
+}
+.precios__container .precios__tabla .basic2 {
+  background: rgba(150, 182, 243, 0.468);
+}
+.precios__container .precios__tabla .basic3 {
+  background: rgba(81, 115, 177, 0.432);
+}
+.precios__container .precios__tabla .basic4 {
+  background: rgba(76, 112, 180, 0.633);
+}
+.precios__container .precios__tabla .basic5 {
+  background: rgba(55, 93, 164, 0.657);
 }
 .precios__container .precios__tabla .precios__title--plan {
   color: rgb(26, 26, 99);
   margin-bottom: 1em;
   font-weight: 400;
   font-size: 2rem;
+  text-shadow: 2px 3px 10px rgba(255, 255, 255, 0.7);
 }
 .precios__container .precios__tabla .precios__precio {
   font-size: 2.2rem;
@@ -456,6 +472,16 @@ html {
   text-align: center;
   justify-items: center;
   margin: 50px 30px 0 30px;
+}
+.FAQ__container .FAQ__title {
+  color: rgba(132, 161, 255, 0.8);
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+}
+.FAQ__container .FAQ__text {
+  line-height: 1.7em;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 .FAQ__container .FAQ__container--container {
   display: grid;
@@ -496,6 +522,58 @@ html {
   text-align: left;
   height: 0;
   transition: height 0.3s;
+  line-height: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-size: 17px;
+}
+
+.comentarios__container {
+  background-color: rgba(147, 146, 146, 0.105);
+}
+
+.comentarios__container--container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 1em;
+  align-items: center;
+  width: 95%;
+  height: 50vh;
+  padding-left: 40px;
+}
+.comentarios__container--container .comentarios__body {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+.comentarios__container--container .comentarios__body--show {
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+.comentarios__container--container .comentarios__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comentarios__container--container .comentarios__texts {
+  max-width: 700px;
+}
+.comentarios__container--container .comentarios__arrow {
+  width: 90%;
+  cursor: pointer;
+}
+.comentarios__container--container .comentarios__curso {
+  background: rgba(132, 161, 255, 0.8);
+  color: white;
+  display: inline-block;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

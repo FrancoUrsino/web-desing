@@ -21,7 +21,27 @@
       border-radius: 1em;
       width: 310px;
       height: auto;
-      padding: 20px 5px;
+      padding: 20px 5px 10px;
+    }
+
+    .basic{
+      background: rgba(185, 209, 255, 0.432);
+    }
+
+    .basic2{
+      background: rgba(150, 182, 243, 0.468);
+    }
+
+    .basic3{
+      background: rgba(81, 115, 177, 0.432);
+    }
+
+    .basic4{
+      background: rgba(76, 112, 180, 0.633);
+    }
+
+    .basic5{
+      background: rgba(55, 93, 164, 0.657);
     }
 
     .precios__title--plan{
@@ -29,6 +49,7 @@
       margin-bottom: 1em;
       font-weight: 400;
       font-size: 2rem;
+      text-shadow: 2px 3px 10px rgba(255, 255, 255, 0.7)
     }
 
     .precios__precio{
