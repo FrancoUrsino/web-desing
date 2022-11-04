@@ -184,3 +184,25 @@
     transition-delay: 0.75s;
   }
 }
+
+.precios__btn{
+  display: block;
+  padding: 15px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: $color1;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: $color3;
+  box-shadow: 0 0 1px rgba( 0, 0, 0, .5);
+  margin-top: 10px;
+  transition: all .6s ease;
+
+  &:hover{
+    letter-spacing: .4rem;
+  }
+}
+
+.btn{
+  margin-top: 67px;
+}

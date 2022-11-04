@@ -294,6 +294,27 @@ html {
   transition-delay: 0.75s;
 }
 
+.precios__btn {
+  display: block;
+  padding: 15px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: rgba(132, 161, 255, 0.8);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  transition: all 0.6s ease;
+}
+.precios__btn:hover {
+  letter-spacing: 0.4rem;
+}
+
+.btn {
+  margin-top: 67px;
+}
+
 .about__container {
   text-align: center;
 }
@@ -373,6 +394,7 @@ html {
 .AcercaDe__container .AcercaDe__container--sub .AcercaDe__img .AcercaDe__img--img {
   width: 100%;
   display: block;
+  padding-left: 100px;
 }
 
 .precios__container {
@@ -396,7 +418,7 @@ html {
   text-align: center;
   border-radius: 1em;
   width: 310px;
-  height: 75vh;
+  height: auto;
   padding: 20px 5px;
 }
 .precios__container .precios__tabla .precios__title--plan {
@@ -409,6 +431,7 @@ html {
   font-size: 2.2rem;
   color: rgba(0, 0, 0, 0.5);
   padding-bottom: 20px;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
 }
 .precios__container .precios__tabla .precios__items {
   margin-top: 35px;
@@ -428,16 +451,51 @@ html {
   padding-bottom: 15px;
   justify-content: flex-start;
 }
-.precios__container .precios__tabla .precios__btn {
-  display: block;
-  padding: 20px 0;
-  border-radius: 10px;
-  text-decoration: none;
-  background-color: white;
-  font-weight: 600;
+
+.FAQ__container {
+  text-align: center;
+  justify-items: center;
+  margin: 50px 30px 0 30px;
+}
+.FAQ__container .FAQ__container--container {
+  display: grid;
+  gap: 2em;
+  padding: 50px 0 100px 0;
+}
+.FAQ__container .FAQ__container--container .FAQ__padding {
+  padding: 0;
+  transition: padding 0.3s;
+  border: 1px solid rgba(132, 161, 255, 0.8);
+  border-radius: 6px;
+}
+.FAQ__container .FAQ__container--container .FAQ__answer {
+  padding: 0 30px;
+  overflow: hidden;
+}
+.FAQ__container .FAQ__container--container .FAQ__title-- {
+  display: flex;
+  padding: 30px 0;
+  cursor: pointer;
+  font-size: 1.4rem;
   color: rgba(132, 161, 255, 0.8);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  margin-top: 10px;
+  justify-content: space-between;
+}
+.FAQ__container .FAQ__container--container .FAQ__title-- .FAQ__icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  transition: transform 0.3s;
+}
+.FAQ__container .FAQ__container--container .FAQ__title-- .FAQ__icon .FAQ__icon--icon {
+  display: block;
+}
+.FAQ__container .FAQ__container--container .FAQ__question {
+  text-align: left;
+  height: 0;
+  transition: height 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
