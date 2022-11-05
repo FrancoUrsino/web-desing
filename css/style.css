@@ -311,8 +311,12 @@ html {
   letter-spacing: 0.4rem;
 }
 
-.btn {
+.bt {
   margin-top: 67px;
+}
+
+.btn {
+  margin-top: 65px;
 }
 
 .about__container {
@@ -583,6 +587,19 @@ html {
 }
 .footer__icon {
   text-decoration: none;
+}
+
+.contact__container {
+  background-color: rgba(43, 43, 134, 0.8);
+  margin: 4em 0;
+  height: 60vh;
+}
+.contact__container .contact__container--container {
+  width: 30%;
+  padding-left: 50px;
+}
+.contact__container .contact__text {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

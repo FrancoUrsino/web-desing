@@ -36,22 +36,22 @@
               <a class="nav-link nav__link" aria-current="page" href="#">inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__link" href="#">contenido</a>
+              <a class="nav-link nav__link" href="#about">contenido</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav__link" href="#">anotarse</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle nav__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle nav__link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 acerca de
               </a>
               <ul class="dropdown-menu nav__list--sub">
-                <li><a class="dropdown-item nav__link" href="#">nosotros</a></li>
-                <li><a class="dropdown-item nav__link" href="#">precios</a></li>
-                <li><a class="dropdown-item nav__link" href="#">FAQ</a></li>
+                <li><a class="dropdown-item nav__link" href="#AcercaDe">nosotros</a></li>
+                <li><a class="dropdown-item nav__link" href="#precios">precios</a></li>
+                <li><a class="dropdown-item nav__link" href="#FAQ">FAQ</a></li>
               </ul>
               <li class="nav-item">
-                <a class="nav-link nav__link" href="#">contactanos</a>
+                <a class="nav-link nav__link" href="#contacto">contactanos</a>
               </li>
           </ul>
         </div>
@@ -76,7 +76,7 @@
 
   <main>
 
-    <section class="about__container container">
+    <section class="about__container container" id="about">
       <h2 class="about__title">¿Qué contenido se va a dar a lo largo de este curso?</h2>
       <p class="about__text">Todo lo necesario para maquetar un sitio web tanto de HTML como de CSS desde lo más basico: que son las etiquetas, clases, id, la importancia de cada una, flexbox, grid, custom properties, animaciones, box model y mucho más!!. Ademas, todos los cursos tienen un proyecto para entregar al final y ver si lo aprendido está aplicado. Una vez aprobado se les dará un título de finalizacion y aprobación del curso;luego de finalizar el mismo, vas a poner crear tus propios sitios web y darles el diseño que más te guste</p>
 
@@ -122,7 +122,7 @@
 
     </section>
 
-    <section class="AcercaDe__container">
+    <section class="AcercaDe__container" id="AcercaDe">
       <div class="container AcercaDe__container--sub">
         <div class="AcercaDe__info">
           <h2 class="AcercaDe__title">Curso de desarrollador web completo ¡Busca tu trabajo soñado!</h2>
@@ -136,7 +136,7 @@
       </div>
     </section>
 
-    <section class="precios__container container">
+    <section class="precios__container container" id="precios"> 
       <h2 class="precios__title">Inscribite al plan que más se amolde a tus necesidades</h2>
 
       <div class="precios__tabla">
@@ -193,7 +193,7 @@
             <li class="precios__info"><i class="bi bi-check2"></i> Animaciones</li>
             <li class="precios__info"><i class="bi bi-check2"></i> Transiciones</li>
           </ul>
-          <a href="#" class="precios__btn btn">Empieza ahora</a>
+          <a href="#" class="precios__btn bt">Empieza ahora</a>
         </div>
         <div class="precios__element basic5">
           <p class="precios__title--plan">SASS</p>
@@ -209,7 +209,7 @@
       </div>
     </section>
 
-    <section class="FAQ__container container">
+    <section class="FAQ__container container" id="FAQ">
       <h2 class="FAQ__title">Preguntas Frecuentes</h2>
       <p class="FAQ__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem fuga sequi tempore a quis sunt aut. Veniam tempora harum ut.</p>
 
@@ -311,6 +311,32 @@
           </figure>
         </section>
         <img src="img/next.svg" class="comentarios__arrow" id="next">
+      </div>
+    </section>
+
+    <section class="contact__container" id="contacto">
+      <div class="contact__container--container">
+        <div class="row">
+          <div class="col contact__text">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" id="name" aria-label="First name">
+          </div>
+        
+          <div class="col contact__text">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" placeholder="Apellido" id="apellido" aria-label="Last name">
+          </div>
+        </div>
+        <div class="mb-3 contact__text">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
+        </div>
+        <div class="mb-2 contact__text">
+          <label for="exampleFormControlTextarea1" class="form-label">CONSULTA</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-light">Enviar</button>
       </div>
     </section>
   </main>

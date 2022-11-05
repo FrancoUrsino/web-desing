@@ -1,0 +1,14 @@
+.contact__container{
+  background-color: $color4;
+  margin: 4em 0;
+  height: 60vh;
+
+  .contact__container--container{
+    width: 30%;
+    padding-left: 50px;
+  }
+
+  .contact__text{
+    color:$color1;
+  }
+}
