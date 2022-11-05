@@ -57,14 +57,14 @@
       }
     }
 
-    .FAQ__question{
+    .FAQ__question__{
       text-align: left;
       height: 0;
       transition: height .3s;
       line-height: 1.3rem;
       letter-spacing: .1rem;
       font-size: 17px;
-
+      margin-bottom: 0;
     }
   }
 }
