@@ -1,14 +1,19 @@
-.nav__container{
+.navbar__nav{
   width: 95%;
   padding: 0;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
   .nav__logo{
     font-family: $logo;
     letter-spacing: 5px;
+    color: $color1;
+    
+    &:hover{
+      color: $color1;
+      text-shadow: 2px 3px 10px rgb(255, 255, 255);
+    }
   }
 
   .nav__list{
@@ -16,24 +21,17 @@
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 2em;
-    
+    gap: 2em;    
 
     .nav__link{
       text-decoration: none;
       text-transform: uppercase;
       color: $color1;
     }
-  }
 
-  .nav__menu{
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
+    .nav__list--sub{
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+    }
   }
-
-  .nav__close{
-    display: $show;
-  }
-
 }

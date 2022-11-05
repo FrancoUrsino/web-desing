@@ -25,7 +25,7 @@ html {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2588235294) 0%, rgba(0, 0, 0, 0.2588235294) 100%), url(../img/header_index.jpg);
-  clip-path: polygon(0 0, 75% 0%, 100% 0, 100% 91%, 10% 73%, 0 71%);
+  clip-path: polygon(50% 0%, 100% 0, 100% 96%, 0 78%, 0 0);
   background-size: cover;
   z-index: -1;
 }
@@ -102,37 +102,37 @@ html {
     font-weight: 600;
   }
 }
-.nav__container {
+.navbar__nav {
   width: 95%;
   padding: 0;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.nav__container .nav__logo {
+.navbar__nav .nav__logo {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 5px;
+  color: white;
 }
-.nav__container .nav__list {
+.navbar__nav .nav__logo:hover {
+  color: white;
+  text-shadow: 2px 3px 10px rgb(255, 255, 255);
+}
+.navbar__nav .nav__list {
   margin-left: auto;
   padding: 0;
   list-style: none;
   display: flex;
   gap: 2em;
 }
-.nav__container .nav__list .nav__link {
+.navbar__nav .nav__list .nav__link {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
 }
-.nav__container .nav__menu {
-  margin-left: auto;
-  cursor: pointer;
-  display: none;
-}
-.nav__container .nav__close {
-  display: none;
+.navbar__nav .nav__list .nav__list--sub {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 .header__btn {
@@ -574,6 +574,15 @@ html {
   color: white;
   display: inline-block;
   padding: 5px;
+}
+
+.footer {
+  color: rgba(43, 43, 134, 0.8);
+  border-top: 1px solid rgba(43, 43, 134, 0.8);
+  overflow-x: hidden;
+}
+.footer__icon {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
